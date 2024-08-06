@@ -14,5 +14,5 @@ spring:
 app:
   translation:
     api:
-      key:
+      key: AQVNzXdErelROgSgq8Zm758aPo78O7jGU64Mni5-
       url: https://translate.api.cloud.yandex.net/translate/v2/translate
