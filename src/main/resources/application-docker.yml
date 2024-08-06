@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/tbankjuniorjava
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password
+  liquibase:
+    change-log: classpath:/db/changelog/main-changelog.yml
+  h2:
+    console:
+      enabled: false
+app:
+  translation:
+    api:
+      key: ${APP_TRANSLATION_API_KEY}
+      url: https://translate.api.cloud.yandex.net/translate/v2/translate

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: t-bank-junior-java
+  datasource:
+    url: jdbc:h2:mem:localdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    change-log: classpath:/db/changelog/main-changelog.yml
+app:
+  translation:
+    api:
+      key:
+      url: https://translate.api.cloud.yandex.net/translate/v2/translate

@@ -1,0 +1,7 @@
+spring:
+  liquibase:
+    enabled: true
+    contexts: test
+    change-log: classpath:/db/changelog/main-changelog.yml
+  datasource:
+    driver-class-name: org.postgresql.Driver
